@@ -77,3 +77,23 @@ body {
   font-size: 14px;
   color: #777;
 }
+.menu {
+  background-color: #4a0099;
+  display: flex;
+  gap: 24px;
+  padding: 14px 24px;
+  justify-content: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}
