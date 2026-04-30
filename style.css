@@ -24,9 +24,9 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 2500px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 60px;
 }
 
 .card {
@@ -127,4 +127,70 @@ html {
 
 .botao-hero:hover {
   background-color: #f0d9ff;
+}
+
+.secao-intro {
+  font-style: italic;
+  color: #6a0dad;
+  border-left: 4px solid #6a0dad;
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+
+.card h3 {
+  color: #4a0099;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.accordion {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion-btn {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a0099;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-btn::after {
+  content: "∨";
+  font-size: 18px;
+  color: #4a0099;
+}
+
+.accordion-btn.ativo::after {
+  content: "∧";
+}
+
+.accordion-conteudo {
+  display: none;
+  padding: 0 20px 16px 20px;
+}
+
+.accordion-conteudo.aberto {
+  display: block;
 }
