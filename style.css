@@ -1,84 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Nunito+Sans:wght@300;400;500;600&display=swap');
 
-body {
-  font-family: "Inter", sans-serif;
+* {
   margin: 0;
-  background-color: #f5f5f5;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #F7F3F8;
+  color: #1E0A2E;
+}
+
+/* HEADER */
 .topo {
-  background-color: #6a0dad;
-  color: white;
+  background-color: #1E0A2E;
+  color: #F7F3F8;
   text-align: center;
   padding: 60px 20px;
 }
 
 .topo h1 {
-  margin: 0;
+  font-family: 'Nunito', sans-serif;
   font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  color: #F7F3F8;
 }
 
 .topo p {
   margin-top: 10px;
   font-size: 18px;
+  font-weight: 300;
+  color: #D4A0B8;
 }
 
-.container {
-  max-width: 2500px;
-  margin: auto;
-  padding: 20px 60px;
-}
-
-.card {
-  background: white;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.card h2 {
-  margin-top: 0;
-}
-
-.botao {
-  background-color: #6a0dad;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.botao-180 {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #6a0dad;
-  border: 2px solid #6a0dad;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 12px;
-}
-
-.botao-180:hover {
-  background-color: #6a0dad;
-  color: #ffffff;
-}
-
-.botao:hover {
-  background-color: #5800b3;
-}
-
-.rodape {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #777;
-}
+/* MENU */
 .menu {
-  background-color: #4a0099;
+  background-color: #2D1048;
   display: flex;
   gap: 24px;
   padding: 14px 24px;
@@ -86,63 +49,49 @@ body {
 }
 
 .menu a {
-  color: white;
+  color: #F7F3F8;
   text-decoration: none;
   font-size: 15px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
 }
 
 .menu a:hover {
-  text-decoration: underline;
-}
-html {
-  scroll-behavior: smooth;
+  color: #E8B4C8;
 }
 
-.hero {
-  background-color: #3d006e;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+/* CONTAINER */
+.container {
+  max-width: 2500px;
+  margin: auto;
+  padding: 20px 60px;
 }
 
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 16px;
+/* CARDS */
+.card {
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #EDE0F0;
+  box-shadow: 0 3px 0 #E8B4C8, 0 6px 16px rgba(45, 16, 72, 0.07);
 }
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 32px;
-}
-
-.botao-hero {
-  cursor: pointer;
-  background-color: white;
-  color: #6a0dad;
-  padding: 14px 32px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.botao-hero:hover {
-  background-color: #f0d9ff;
-}
-
-.secao-intro {
-  font-style: italic;
-  color: #6a0dad;
-  border-left: 4px solid #6a0dad;
-  padding-left: 12px;
-  margin-bottom: 24px;
+.card h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1E0A2E;
+  margin-bottom: 12px;
 }
 
 .card h3 {
-  color: #4a0099;
+  font-family: 'Nunito', sans-serif;
+  color: #4A1468;
   margin-top: 24px;
   margin-bottom: 8px;
   font-size: 17px;
+  font-weight: 600;
 }
 
 .card ul {
@@ -151,26 +100,58 @@ html {
 
 .card ul li {
   margin-bottom: 8px;
-  line-height: 1.6;
-  color: #333;
+  line-height: 1.7;
+  color: #3D2455;
+  font-weight: 400;
 }
 
+.card ol {
+  padding-left: 20px;
+}
+
+.card ol li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+  color: #3D2455;
+  font-weight: 400;
+}
+
+.card p {
+  color: #3D2455;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* FRASE DE INTRO */
+.secao-intro {
+  font-style: italic;
+  color: #4A1468;
+  border-left: 4px solid #E8B4C8;
+  padding-left: 12px;
+  margin-bottom: 24px;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+/* ACCORDION */
 .accordion {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #EDE0F0;
   border-radius: 12px;
   margin-bottom: 12px;
-  overflow: hidden;
+  overflow: visible;
+  background: #FDFAFF;
 }
 
 .accordion-btn {
   width: 100%;
-  background: white;
+  background: transparent;
   border: none;
   padding: 16px 20px;
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  color: #4a0099;
+  font-family: 'Nunito', sans-serif;
+  color: #4A1468;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -180,11 +161,15 @@ html {
 .accordion-btn::after {
   content: "∨";
   font-size: 18px;
-  color: #4a0099;
+  color: #E8B4C8;
 }
 
 .accordion-btn.ativo::after {
   content: "∧";
+}
+
+.accordion-btn:hover {
+  background: #F5E8F2;
 }
 
 .accordion-conteudo {
@@ -196,48 +181,51 @@ html {
   display: block;
 }
 
-.botao, .botao-180, .botao-hero {
-  transition: all 0.3s ease;
-}
-.botao-fixo {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background-color: #6a0dad;
-  color: white;
-  border: none;
-  padding: 14px 20px;
-  border-radius: 50px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  z-index: 999;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.botao-fixo:hover {
-  background-color: #5800b3;
-}
-
+/* LINKS EXTERNOS */
 .link-externo {
   display: inline-block;
   margin-top: 12px;
-  color: #6a0dad;
+  color: #4A1468;
   font-weight: 600;
   text-decoration: none;
   font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .link-externo:hover {
   text-decoration: underline;
 }
 
-.accordion-conteudo ol {
-  padding-left: 20px;
+/* BOTÃO FIXO */
+.botao-fixo {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #E8B4C8;
+  color: #1E0A2E;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 16px rgba(45, 16, 72, 0.15);
 }
 
-.accordion-conteudo ol li {
-  margin-bottom: 8px;
-  line-height: 1.6;
-  color: #333;
+.botao-fixo:hover {
+  background-color: #D4A0B8;
+}
+
+/* FOOTER */
+.rodape {
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 14px;
+  color: #6B4D7A;
+  font-weight: 400;
+  background-color: #1E0A2E;
+  color: #D4A0B8;
+  margin-top: 20px;
 }
