@@ -42,10 +42,74 @@ body {
 /* MENU */
 .menu {
   background-color: #2D1048;
-  display: flex;
-  gap: 24px;
   padding: 14px 24px;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.hamburguer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+}
+
+.hamburguer span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #E8B4C8;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburguer.ativo span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburguer.ativo span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.ativo span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.menu-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #2D1048;
+  width: 260px;
+  padding: 12px 0;
+  border-radius: 0 0 0 16px;
+  box-shadow: -4px 4px 20px rgba(45, 16, 72, 0.3);
+  z-index: 100;
+}
+
+.menu-links.aberto {
+  display: flex;
+}
+
+.menu-links a {
+  color: #F7F3F8;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  padding: 12px 24px;
+}
+
+.menu-links a:hover {
+  background-color: #4A1468;
+  color: #E8B4C8;
 }
 
 .menu a {
