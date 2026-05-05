@@ -26,7 +26,7 @@ body {
 
 .topo h1 {
   font-family: 'Nunito', sans-serif;
-  font-size: 42px;
+  font-size: 64px;
   font-weight: 700;
   margin: 0;
   color: #F7F3F8;
@@ -34,7 +34,7 @@ body {
 
 .topo p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
   color: #D4A0B8;
 }
@@ -143,7 +143,7 @@ body {
 
 .card h2 {
   font-family: 'Nunito', sans-serif;
-  font-size: 22px;
+  font-size: 38px;
   font-weight: 700;
   color: #1E0A2E;
   margin-bottom: 12px;
@@ -164,9 +164,10 @@ body {
 
 .card ul li {
   margin-bottom: 8px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #3D2455;
   font-weight: 400;
+  font-size: 22px;
 }
 
 .card ol {
@@ -175,15 +176,17 @@ body {
 
 .card ol li {
   margin-bottom: 8px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #3D2455;
   font-weight: 400;
+  font-size: 22px;
 }
 
 .card p {
   color: #3D2455;
-  line-height: 1.7;
+  line-height: 1.8;
   font-weight: 400;
+  font-size: 22px;
 }
 
 /* FRASE DE INTRO */
@@ -210,9 +213,9 @@ body {
   width: 100%;
   background: transparent;
   border: none;
-  padding: 16px 20px;
+  padding: 18px 20px;
   text-align: left;
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 600;
   font-family: 'Nunito', sans-serif;
   color: #4A1468;
