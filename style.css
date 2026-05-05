@@ -218,3 +218,26 @@ html {
 .botao-fixo:hover {
   background-color: #5800b3;
 }
+
+.link-externo {
+  display: inline-block;
+  margin-top: 12px;
+  color: #6a0dad;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-externo:hover {
+  text-decoration: underline;
+}
+
+.accordion-conteudo ol {
+  padding-left: 20px;
+}
+
+.accordion-conteudo ol li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #333;
+}
