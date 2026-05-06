@@ -16,7 +16,7 @@ body {
   color: #1E0A2E;
 }
 
-/* HEADER */
+
 .topo {
   background-color: #1E0A2E;
   color: #F7F3F8;
@@ -126,7 +126,7 @@ body {
 
 /* CONTAINER */
 .container {
-  max-width: 2500px;
+  max-width: 900px;
   margin: auto;
   padding: 20px 60px;
 }
