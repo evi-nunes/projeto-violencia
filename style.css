@@ -287,16 +287,26 @@ body {
 
 /* FOOTER */
 .rodape {
-  text-align: center;
-  padding: 28px 20px;
-  font-size: 14px;
-  color: #6B4D7A;
-  font-weight: 400;
   background-color: #1E0A2E;
   color: #D4A0B8;
+  text-align: center;
+  padding: 40px 20px;
   margin-top: 20px;
 }
 
+.rodape .frase-final {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F7F3F8;
+  margin-bottom: 12px;
+}
+
+.rodape .credito {
+  font-size: 14px;
+  color: #D4A0B8;
+  margin-top: 8px;
+}
 /* CARDS DE CONTATO */
 .grid-contatos {
   display: grid;
