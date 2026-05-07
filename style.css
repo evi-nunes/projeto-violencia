@@ -126,8 +126,6 @@ body {
 
 /* CONTAINER */
 .container {
-  max-width: 900px;
-  margin: auto;
   padding: 20px 60px;
 }
 
@@ -159,7 +157,7 @@ body {
 }
 
 .card ul {
-  padding-left: 20px;
+  padding-left: 32px;
 }
 
 .card ul li {
@@ -171,7 +169,7 @@ body {
 }
 
 .card ol {
-  padding-left: 20px;
+  padding-left: 32px;
 }
 
 .card ol li {
@@ -205,7 +203,7 @@ body {
   border: 1px solid #EDE0F0;
   border-radius: 12px;
   margin-bottom: 12px;
-  overflow: visible;
+  overflow: hidden;
   background: #FDFAFF;
 }
 
@@ -241,7 +239,7 @@ body {
 
 .accordion-conteudo {
   display: none;
-  padding: 0 20px 16px 20px;
+  padding: 0 20px 16px 36px;
 }
 
 .accordion-conteudo.aberto {
